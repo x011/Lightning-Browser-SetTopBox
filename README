@@ -1,4 +1,19 @@
-This is an open source webkit based browser. 
+All credits go to Anthony of course :-)
+
+My changes:
+- Disables zoom using Java code and Javascript (the latter was needed because the double tap zoom cannot be easily disabled)
+- Uses Lightning Touch from Rick Trott (https://github.com/trott/LightningTouch) in order to speed up touch events and make the browser faster
+- Enabled hardware acceleration, seems to improve performance a teeeny little bit
+- Modified the desktop user agent to use what the 4.0.3 android browser uses, this makes the desktop version of Facebook work.
+
+These changes were made in order to have a more pleasant browsing experience on Android set-top boxes like the MK808 where the resolution is already high enough to make zoom pointless.
+Also, if somebody double taps on the browser window it is not easy to undo the zoom with a keyboard and a mouse, as there is no other input interface than these.
+
+Sadly, the performance s*cks on an actual MK808B but it works rather nicely on my old Asus Transformer TF101 which has an older processor.
+
+ORIGINAL Readme:
+
+This is an open source webkit based browser.
 
 I make money of a similar paid version which currently has unlimited tabs and unlimited bookmarks. Modifiying two values at the top of the main activity "barbones" will turn this into the paid version.
 
